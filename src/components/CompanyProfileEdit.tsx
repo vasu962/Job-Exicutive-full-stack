@@ -1,5 +1,5 @@
 import React, { useState, ChangeEvent } from 'react';
-import { Company } from '../types';
+import { Company } from '../../types';
 
 interface CompanyProfileEditProps {
   company: Company;

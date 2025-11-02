@@ -4,7 +4,7 @@
  * It's designed to be a drop-in replacement for the previous Firebase service,
  * allowing the frontend to function while the Django/PostgreSQL backend is being developed.
  */
-import { Job, Company, JobSeeker, Admin, Review, BlogPost, ReactionType, Reaction, Comment, JobType, LocationType } from '../types';
+import { Job, Company, JobSeeker, Admin, Review, BlogPost, ReactionType, Reaction, Comment, JobType, LocationType } from '../../types';
 
 type UserRole = 'seeker' | 'company' | 'admin';
 type User = JobSeeker | Company | Admin;

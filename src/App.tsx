@@ -3,7 +3,7 @@ import LoginPage from './components/LoginPage';
 import SeekerDashboard from './components/SeekerDashboard';
 import CompanyDashboard from './components/CompanyDashboard';
 import AdminDashboard from './components/AdminDashboard';
-import { JobSeeker, Company, Admin, Job, Review, BlogPost, ReactionType, Comment } from './types';
+import { JobSeeker, Company, Admin, Job, Review, BlogPost, ReactionType, Comment } from '../types';
 import { api } from './services/apiService';
 import BlogPage from './components/BlogPage';
 import { BriefcaseIcon, NewspaperIcon } from './components/icons';

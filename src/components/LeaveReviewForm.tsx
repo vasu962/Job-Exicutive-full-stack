@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Review } from '../types';
+import { Review } from '../../types';
 import { StarIcon } from './icons';
 
 interface LeaveReviewFormProps {

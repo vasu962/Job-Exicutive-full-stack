@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Job, Company, JobType, LocationType } from '../types';
+import { Job, Company, JobType, LocationType } from '../../types';
 
 interface PostJobFormProps {
   onSave: (job: Job | Omit<Job, 'id' | 'applicants' | 'shortlisted' | 'rejected'>) => void;

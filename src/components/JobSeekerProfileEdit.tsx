@@ -1,5 +1,5 @@
 import React, { useState, ChangeEvent } from 'react';
-import { JobSeeker } from '../types';
+import { JobSeeker } from '../../types';
 import { ArrowUpTrayIcon } from './icons';
 
 interface JobSeekerProfileEditProps {

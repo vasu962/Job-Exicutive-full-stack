@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from 'react';
-import { Job, Company, JobSeeker, Review, JobType } from '../types';
+import { Job, Company, JobSeeker, Review, JobType } from '../../types';
 import JobCard from './JobCard';
 import Modal from './Modal';
 import JobDetails from './JobDetails';

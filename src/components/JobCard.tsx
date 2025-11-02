@@ -1,5 +1,5 @@
 import React from 'react';
-import { Job, Company, JobType, LocationType } from '../types';
+import { Job, Company, JobType, LocationType } from '../../types';
 import { BriefcaseIcon, BuildingOfficeIcon, MapPinIcon, CurrencyDollarIcon, ClockIcon, GlobeAltIcon } from './icons';
 import StarRating from './StarRating';
 

@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from 'react';
-import { BlogPost, ReactionType, Comment } from '../types';
+import { BlogPost, ReactionType, Comment } from '../../types';
 import Modal from './Modal';
 import { PencilIcon, TrashIcon, HandThumbUpIcon, HeartIcon, HandThumbDownIcon, HandThumbUpIconSolid, HeartIconSolid, HandThumbDownIconSolid } from './icons';
 

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { JobSeeker, JobAlertsPreferences, JobType, LocationType } from '../types';
+import { JobSeeker, JobAlertsPreferences, JobType, LocationType } from '../../types';
 import { BellIcon } from './icons';
 import Modal from './Modal';
 

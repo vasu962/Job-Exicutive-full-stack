@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Job, Company } from '../types';
+import { Job, Company } from '../../types';
 import { BriefcaseIcon, CurrencyDollarIcon, MapPinIcon } from './icons';
 
 interface JobDetailsProps {

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Company, Job, JobSeeker } from '../types';
+import { Company, Job, JobSeeker } from '../../types';
 import Modal from './Modal';
 import CompanyProfileEdit from './CompanyProfileEdit';
 import PostJobForm from './PostJobForm';

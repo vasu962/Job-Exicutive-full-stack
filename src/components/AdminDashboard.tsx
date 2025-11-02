@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Job, Company, JobSeeker } from '../types';
+import { Job, Company, JobSeeker } from '../../types';
 import { BriefcaseIcon, BuildingOfficeIcon, PencilIcon, PlusCircleIcon, TrashIcon, UsersIcon } from './icons';
 import Modal from './Modal';
 import JobSeekerProfileEdit from './JobSeekerProfileEdit';
