@@ -1,0 +1,37 @@
+# version: '4.49'
+
+services:
+  # 1. PostgreSQL Database Service
+  db:
+    image: postgres:18-alpine
+    container_name: jobex_postgres
+    restart: always
+    environment:
+      POSTGRES_USER: postgres     # Use a dedicated username
+      POSTGRES_PASSWORD: mysecretpassword # Use a strong password
+      POSTGRES_DB: job-executed # Database name
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data # Persist data
+
+  # 2. Node.js Backend Service
+  backend:
+    build:
+      context: ./backend # Build from the Dockerfile in the 'backend' folder
+      dockerfile: Dockerfile
+    container_name: jobex_backend
+    restart: always
+    ports:
+      - "3001:3001" # Host port:Container port (Assuming your backend runs on 3001)
+    depends_on:
+      - db # Ensure DB starts before the backend
+    env_file:
+      - .env # Pass environment variables from your root .env file
+    # If running with a volume for live development (optional):
+    # volumes:
+    #   - ./backend:/app
+    #   - /app/node_modules
+
+volumes:
+  postgres_data:
